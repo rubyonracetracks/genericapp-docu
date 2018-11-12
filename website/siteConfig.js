@@ -45,9 +45,6 @@ const siteConfig = {
   // If you have users set above, you add it here:
   users,
 
-  /* path to images for header/footer */
-  favicon: 'img/favicon.png',
-
   /* Colors for website */
   colors: {
     primaryColor: '#2E8555',
