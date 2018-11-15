@@ -51,12 +51,6 @@ const SplashContainer = props => (
   </div>
 );
 
-const Logo = props => (
-  <div className="projectLogo">
-    <img src={props.img_src} alt="Project Logo" />
-  </div>
-);
-
 const ProjectTitle = () => (
   <h2 className="projectTitle">
     {siteConfig.title}
@@ -80,7 +74,6 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
             <Button href={docUrl('doc1.html', language)}>Example Link</Button>
           </PromoSection>
         </div>
@@ -98,56 +91,6 @@ const Block = props => (
   </Container>
 );
 
-const Features = () => (
-  <Block layout="fourColumn">
-    {[
-      {
-        content: 'This is the content of my feature',
-        imageAlign: 'top',
-        title: 'Feature One',
-      },
-      {
-        content: 'The content of my second feature',
-        imageAlign: 'top',
-        title: 'Feature Two',
-      },
-    ]}
-  </Block>
-);
-
-const FeatureCallout = () => (
-  <div
-    className="productShowcaseSection paddingBottom"
-    style={{textAlign: 'center'}}>
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
-  </div>
-);
-
-const LearnHow = () => (
-  <Block background="light">
-    {[
-      {
-        content: 'Talk about learning how to use this',
-        imageAlign: 'right',
-        title: 'Learn How',
-      },
-    ]}
-  </Block>
-);
-
-const TryOut = () => (
-  <Block id="try">
-    {[
-      {
-        content: 'Talk about trying this out',
-        imageAlign: 'left',
-        title: 'Try it Out',
-      },
-    ]}
-  </Block>
-);
-
 const Description = () => (
   <Block background="dark">
     {[
@@ -160,26 +103,6 @@ const Description = () => (
   </Block>
 );
 
-const Showcase = props => {
-  if ((siteConfig.users || []).length === 0) {
-    return null;
-  }
-
-  const showcase = siteConfig.users.filter(user => user.pinned).map(user => (
-    <a href={user.infoLink} key={user.infoLink}>
-      <img src={user.image} alt={user.caption} title={user.caption} />
-    </a>
-  ));
-
-  return (
-    <div className="productShowcaseSection paddingBottom">
-      <h2>Who is Using This?</h2>
-      <p>This project is used by all these people</p>
-      <div className="logos">{showcase}</div>
-    </div>
-  );
-};
-
 class Index extends React.Component {
   render() {
     const language = this.props.language || '';
@@ -188,12 +111,7 @@ class Index extends React.Component {
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
           <Description />
-          <Showcase language={language} />
         </div>
       </div>
     );
