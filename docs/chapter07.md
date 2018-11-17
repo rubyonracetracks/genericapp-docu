@@ -1,7 +1,7 @@
 ---
-id: chapter05
-title: Chapter 5: Production Environment Email
-sidebar_label: Chapter 5: Production Environment Email
+id: chapter07
+title: Chapter 7: Production Environment Email
+sidebar_label: Chapter 7: Production Environment Email
 ---
 
 So far, your Rails app can only send out emails in the development and testing environments.  In this chapter, you will enable your app to send out emails in the production environment.  This requires a custom configuration for your specific app and thus cannot be automated.  Pick one of the production environment email services listed below, follow the instructions for that section, and then move on to the follow-up steps.
