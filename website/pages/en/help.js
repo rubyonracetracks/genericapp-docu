@@ -21,26 +21,15 @@ function docUrl(doc, language) {
 class Help extends React.Component {
   render() {
     const language = this.props.language || '';
-    const supportLinks = [
-      {
-        content: 'Ask questions about the documentation and project',
-        title: 'Join the community',
-      },
-      {
-        content: "Find out what's new with this project",
-        title: 'Stay up to date',
-      },
-    ];
 
     return (
       <div className="docMainWrapper wrapper">
         <Container className="mainContainer documentContainer postContainer">
           <div className="post">
             <header className="postHeader">
-              <h1>Need help?</h1>
+              <h1>Help</h1>
             </header>
-            <p>This project is maintained by a dedicated group of people.</p>
-            <GridBlock contents={supportLinks} layout="threeColumn" />
+          Help is available on the <a href="https://www.rubyonracetracks.com/help.html">Ruby on Racetracks</a> help page.
           </div>
         </Container>
       </div>
