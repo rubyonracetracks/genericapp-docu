@@ -91,18 +91,6 @@ const Block = props => (
   </Container>
 );
 
-const Description = () => (
-  <Block background="dark">
-    {[
-      {
-        content: 'This is another description of how this project is useful',
-        imageAlign: 'right',
-        title: 'Description',
-      },
-    ]}
-  </Block>
-);
-
 class Index extends React.Component {
   render() {
     const language = this.props.language || '';
@@ -111,7 +99,12 @@ class Index extends React.Component {
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
-          <Description />
+          <Container padding={['bottom', 'top']} background="dark">
+            <h2>Welcome to Generic App!</h2>
+              This is a <a href="http://www.rubyonracetracks.com/">Ruby on Racetracks</a> web site!
+              <br /><br />
+              Welcome to Generic App, the #1 most comprehensive Rails app generator! No other method of starting a Rails app can save you so much time and effort. Stop reinventing the wheel every time you start a new Rails project. User authentication, comprehensive tests, Twitter bootstrap styling, and other features that are desirable in all or most Rails apps are implemented in advance. You get post-installation scripts that consolidate routine multi-step tasks into one step, including the process of setting up your app for PostgreSQL. Outlines of the initial MVC architecture of your new app are also provided. Only GenericApp way gives you a comprehensive Rails app in just a few minutes. If you're not exactly a Generic App user, then you're not exactly viable at Startup Weekend or 24-hour web site challenges.
+          </Container>
         </div>
       </div>
     );
