@@ -30,6 +30,7 @@ const siteConfig = {
     {page: 'about', label: 'About'},
     {page: 'git', label: 'Git'},
     {page: 'help', label: 'Help'},
+    {page: 'links', label: 'Links'}
   ],
 
   /* Colors for website */
