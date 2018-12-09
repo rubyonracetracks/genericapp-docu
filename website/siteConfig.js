@@ -28,6 +28,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'chapter00', label: 'Tutorial'},
     {page: 'about', label: 'About'},
+    {page: 'git', label: 'Git'},
     {page: 'help', label: 'Help'},
   ],
 
