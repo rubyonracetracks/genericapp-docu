@@ -27,7 +27,7 @@ class Git extends React.Component {
             
             <ul>
               <li>Generic App Gem Source Code: <a href="https://bitbucket.org/rubyonracetracks/generic_app/src/master/">https://bitbucket.org/rubyonracetracks/generic_app/src/master/</a></li>
-              <li>This site's source code: <a href="https://bitbucket.org/rubyonracetracks/genericapp-docu/src/master/">https://bitbucket.org/rubyonracetracks/genericapp-docu/src/master/</a></li>
+              <li>This site's source code: <a href="https://github.com/rubyonracetracks/genericapp-docu">https://github.com/rubyonracetracks/genericapp-docu</a></li>
             </ul>
             
           </div>

@@ -19,7 +19,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/rubyonracetracks/genericapp-docu.git"
+    "url": "git+https://github.com/rubyonracetracks/genericapp-docu"
   },
   "keywords": [
     "Generic App",
@@ -27,5 +27,5 @@
   ],
   "author": "Jason Hsu",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/rubyonracetracks/genericapp-docu#readme"
+  "homepage": "https://www.genericapp.net/"
 }
