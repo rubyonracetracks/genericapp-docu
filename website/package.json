@@ -10,7 +10,7 @@
     "test": "npm run-script build"
   },
   "devDependencies": {
-    "docusaurus": "^1.11.1"
+    "docusaurus": "^1.13.0"
   },
   "name": "genericapp-docu",
   "description": "This website was created with [Docusaurus](https://docusaurus.io/).",
